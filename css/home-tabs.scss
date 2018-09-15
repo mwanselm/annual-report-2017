@@ -1,0 +1,535 @@
+---
+---
+@import "variables";
+
+//body {font-family:sans-serif; line-height:1.5; margin:1rem 2rem}
+//h1,h2 {font-weight:100}
+//h2 {margin-top:2rem}
+//li {margin:.75rem 0}
+//kbd,code{font-size:larger}
+* {
+	box-sizing: border-box;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+/* Tab styling (optional) */
+
+//.tl_container {margin: 2rem 0;}
+.tl_list {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	align-items: center;
+	justify-content: left;
+	list-style: none;
+}
+.tl_list li {
+	//margin: 0;
+	//  width: 33.3333%;
+	//text-align: center;
+	//border-radius: .25rem .25rem 0 0;
+}
+[role="tablist"] [aria-selected] {
+	//padding: 1rem 0.5rem;
+	display: block;
+	border: none;
+	text-decoration: none;
+}
+
+/* Non-active tab hover */
+
+[role="tablist"] [aria-selected="false"]:hover {
+	background-color: rgba(35, 110, 206, .125);
+}
+
+/* Section styling (optional) */
+
+.tl_section {
+	//padding: 1rem 1.5rem;
+	//min-height: 8rem;
+	border-radius: 0 0 4px 4px;
+}
+.tl_section h2 {
+	//margin-top: 1rem;
+}
+
+/* tab & panel colour */
+
+[role="tablist"] [aria-selected]:focus,
+[role="tablist"] [aria-selected="true"],
+[role="tabpanel"][aria-hidden="false"] {
+	//background-color: rgba(35,110,206,.25);
+	color: white;
+	outline: 0;
+}
+
+[role="tabpanel"][aria-hidden="false"]:focus {
+    .tab-content {
+         outline: 0;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+.tl_section[aria-hidden="false"] {
+    display: block;
+    -webkit-animation: fadeIn .8s;
+    animation: fadeIn .8s;
+}
+
+.tl_section[aria-hidden="true"] {
+    display: none;
+}
+
+
+
+/*
+  Red focus ring - so you can see where it's focussed.
+  Not required specifically but be sure keyboard users can tell where they are.
+*/
+
+.tl_list a:focus,
+.tl_section:focus {
+//	outline: .125rem solid #f00 !important
+}
+
+/*
+Section styling (required)
+Removes hidden sections from the keychain.
+Only used when JavaScript is available.
+*/
+[role="tabpanel"][aria-hidden="false"] {
+	//display: none;
+	//opacity: 1;
+	z-index: 14;
+}
+
+[role="tabpanel"][aria-hidden="true"] {
+	//display: none;
+	//opacity: 0;
+	z-index: 2;
+}
+#home-tabs {
+	position: relative;
+	height: 34.375rem;
+    background-color: $medium-blue;
+	@media screen and (min-width: 31.25rem) and (max-width: 65.5625rem) {
+		height: 46.875rem;
+	}
+	@media screen and (max-width: 31.1875rem) {
+		height: 31.875rem;
+	}
+	.inner-wrapper {
+		max-width: 1120px;
+		width: 95%;
+		margin: 0 auto;
+		@media screen and (max-width: 65.5625rem) {
+			width: 90.4%;	
+		}
+		&.tabs-wrapper {
+			z-index: 20;
+			position: relative;
+		}
+	}
+	.tabs-left {
+		position: relative;
+		padding-top: 3.5rem;
+		z-index: 4;
+		width: 50%;
+		h2 {
+			margin: 0;
+		}
+		@media screen and (min-width: 31.25rem) and (max-width: 65.5625rem) {
+			padding-top: 2.3125rem;
+			
+			
+		}
+		@media screen and (max-width: 31.1875rem) {
+			width: 100%;
+			padding-top: 1.375rem;
+		}
+		@media screen and (max-width: 65.5625rem) {
+			width: 100%;
+			.tl_list, .ready {
+				float: left !important;
+			}
+		}
+		.ready, .tl_list {
+			max-width: 560px;
+			float: right;
+			//margin-right: 29px;
+		}
+		.ready {
+			width: 100%;
+			font-size: 6.875rem;
+			color: white;
+			margin-bottom: 1rem;
+			@media screen and (min-width: 65.625rem) {
+				margin-right: 10px;
+			}
+			@media screen and (min-width: 31.25rem) and (max-width: 65.5625rem) {
+				font-size: 6.625rem;
+			}
+			@media screen and (max-width: 31.1875rem) {
+				font-size: 4.375rem;
+				margin-bottom: 1rem;
+			}
+		}
+		.tl_list {
+			display: inline-block;
+			li {
+				display: inline-block;
+				line-height: 1;
+				margin-right: 0.625rem;
+				color: $navy-blue;
+				opacity: 0;
+				transition: opacity .2s ease-in-out;
+				&[role="presentation"] {
+					opacity: 1;
+				}
+				a {
+					color: $navy-blue;
+					font-size: 2.375rem;
+					letter-spacing: -.85px;
+					transition: color .2s ease-in-out;
+					font-family: $black;
+					@media screen and (min-width: 71.9375rem) {
+						font-size: 2.375rem;
+					}
+					@media screen and (min-width: 65.625rem) and (max-width: 71.875rem) {
+						font-size: 2.25rem;
+					}
+					@media screen and (min-width: 31.25rem) and (max-width: 65.5625rem) {
+						font-size: 3.125rem;
+					}
+					@media screen and (max-width: 31.1875rem) {
+						 font-size: 1.875rem;
+					}
+					
+				}
+				a, [aria-selected="false"] {
+					
+					
+				}
+				a:focus,
+				[aria-selected="true"]
+				 {
+					color: white;
+					outline: none;
+				}
+				a:focus {
+					text-decoration: underline;
+				}
+				a:hover {
+					color: white;
+				}
+				@media screen and (max-width: 65.5625rem) {
+					a {
+						border-bottom: 2px solid transparent;
+						display: inline-block;
+						&:focus {
+							border-color: white;
+							text-decoration: none;
+						}
+					}
+					[aria-selected="true"]
+						 {
+							//border-color: white;
+							text-decoration: none;
+						}
+				}
+				@media screen and (max-width: 65.5625rem) {
+					line-height: .87;
+				}
+				
+				@media screen and (max-width: 31.1875rem) {
+					display: block;
+					a {
+						height: 1.6875rem;
+						//font-size: 1.875rem;
+						margin-bottom: 2px;
+					}
+				}
+				&.white {
+					a {
+						color: white;
+					}
+				}
+			}
+			
+			@media screen and (min-width: 31.25rem) and (max-width: 65.5625rem) {
+				float: none !important;
+				display: block !important;
+				li {
+					display: block;	
+				}
+			}
+		}
+		.btn-container {
+			position: relative;
+			float: left;
+//			width: 30px;
+//			height: 30px;
+			margin-top: .3rem;
+			&.pause {
+				.pause {
+					display: block;
+				}
+				.play {
+					display: none;
+				}
+			}
+			&.play {
+				.play {
+					display: block;
+				}
+				.pause {
+					display: none;
+				}
+			}
+			button {
+				position: absolute;
+				left: 0;
+				top: 0;
+				//height: 1.875rem;
+				//border: 0;
+				border-top: 0;
+				border-right: 0;
+				border-bottom: 0;
+				background-color: transparent;
+				text-align: left;
+
+				font-size: 0.875rem;
+				text-transform: uppercase;
+				color: #001C38;
+				font-family: $black;
+				margin-left: -7px;
+				//padding-left: 2.4375rem;
+				//background-position: 0.4375rem center;
+				width: 15rem;
+				transition: all  .2s ease-in-out;
+				border-left: 4px solid transparent;
+				svg {
+					display: inline-block;
+					margin-right: 0.5625rem;
+					vertical-align: middle;
+				}
+				&.play {
+
+				}
+				&.pause {
+
+				}
+				&:focus {
+					border-left: 4px solid $wcag-outline;
+					outline: 0;
+				}
+				
+			}
+		}
+		
+	}
+	.blue-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 50%;
+		background-color: rgba(50, 138, 189, .9);
+		z-index: 1;
+		@media screen and (max-width: 65.5625rem) {
+			width: 100%;
+			background-color: rgba(50, 138, 189, .87);
+		}
+	}
+	.social-share {
+		position: absolute;
+		bottom: 20px;
+		right: 15px;
+		z-index: 15;
+		button {
+			outline: 0;
+			//border: 0;
+			background-color: transparent;
+			color: white;
+		}
+		@media screen and (max-width: 56.25rem) {
+			display: block !important;
+		}
+	}
+	.tl_section {
+		position: absolute;
+		left: 0;
+		top: 0;
+		padding-top: 23.5rem;
+		//padding-left: 2rem;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		transition: opacity .4s ease-in-out;
+		opacity: 0;
+		&[role="tabpanel"] {
+			opacity: 1;
+		}
+		//display: none;
+		&:focus {
+			outline: 0;
+            //border: 0;
+			.inner-wrapper {
+				//border: 0;
+				outline: 0;
+			}
+			.tab-content {
+				outline: 0;
+			}
+		}
+		@media screen and (min-width: 31.25rem) and (max-width: 65.5625rem) {
+			padding-top: 36.5rem;	
+		}
+		@media screen and (max-width: 31.1875rem) {
+			padding-top: 23.5rem;
+			background-position: center right;
+		}
+		.inner-wrapper {
+			z-index: 10;
+			position: relative;
+			&:focus {
+				outline: 0;	
+			}
+		}
+		.tab-bottom {
+			width: 50%;
+			
+			@media screen and (max-width: 65.56rem) {
+				width: 100%;	
+			}
+			.tab-content {
+				float: right;
+				//max-width: 560px;
+				width: 100%;
+				padding-right: 30px;
+				transition: all .2s ease-in-out;
+				@media screen and (max-width: 65.56rem) {
+					width: auto;
+					float: left;
+					padding-right: 0px;
+					//max-width: 80% !important;
+					p {
+						//max-width: 100% !important;
+					}
+				}
+				p {
+					text-transform: uppercase;
+					font-size: $wcag-min;
+					color: white;
+					font-family: $medium;
+					margin-top: 0;
+					max-width: 370px;
+					@media screen and (max-width: 31.1875rem) {
+						line-height: 1;	
+						padding-right: 20px;
+					}
+				}
+				a {
+					display: inline-block;
+					background: $navy-blue;
+					color: white;
+					font-family: $black;
+					border-radius: 4px;
+					height: 2.5625rem;
+					line-height: 2.6875rem;
+					padding-left: 0.875rem;
+					padding-right: 0.875rem;
+					text-decoration: none;
+				}
+			}
+		}
+		&#A {
+			background-image: url(../img/d-hero-thrive.jpg);
+			@media screen and (min-width: 31.25rem) and (max-width: 65.56rem) {
+				background-image: url(../img/t-hero-thrive.jpg);
+			}
+			@media screen and (max-width: 31.1875rem) {
+				background-image: url(../img/m-hero-thrive.jpg);
+			}
+		}
+		&#B {
+			background-image: url(../img/d-hero-protect.jpg);
+			@media screen and (min-width: 31.25rem) and (max-width: 65.56rem) {
+				background-image: url(../img/t-hero-protect.jpg);
+			}
+			@media screen and (max-width: 31.1875rem) {
+				background-image: url(../img/m-hero-protect.jpg);
+			}
+		}
+		&#C {
+			background-image: url(../img/d-hero-future.jpg);
+			@media screen and (min-width: 31.25rem) and (max-width: 65.56rem) {
+				background-image: url(../img/t-hero-future.jpg);
+			}
+			@media screen and (max-width: 31.1875rem) {
+				background-image: url(../img/m-hero-future.jpg);
+			}
+		}
+		&#D {
+			background-image: url(../img/d-hero-learn.jpg);
+			@media screen and (min-width: 31.25rem) and (max-width: 65.56rem) {
+				background-image: url(../img/t-hero-learn.jpg);
+			}
+			@media screen and (max-width: 31.1875rem) {
+				background-image: url(../img/m-hero-learn.jpg);
+			}
+		}
+		&#E {
+			background-image: url(../img/d-hero-respond.jpg);
+			@media screen and (min-width: 31.25rem) and (max-width: 65.56rem) {
+				background-image: url(../img/t-hero-respond.jpg);
+			}
+			@media screen and (max-width: 31.1875rem) {
+				background-image: url(../img/m-hero-respond.jpg);
+			}
+		}
+		&#F {
+			background-image: url(../img/d-hero-change.jpg);
+			@media screen and (min-width: 31.25rem) and (max-width: 65.56rem) {
+				background-image: url(../img/t-hero-change.jpg);
+			}
+			@media screen and (max-width: 31.1875rem) {
+				background-image: url(../img/m-hero-change.jpg);
+			}
+		}
+		&#G {
+			background-image: url(../img/d-hero-grow.jpg);
+			@media screen and (min-width: 31.25rem) and (max-width: 65.56rem) {
+				background-image: url(../img/t-hero-grow.jpg);
+			}
+			@media screen and (max-width: 31.1875rem) {
+				background-image: url(../img/m-hero-grow.jpg);
+			}
+		}
+		&#H {
+			background-image: url(../img/d-hero-renew.jpg);
+			@media screen and (min-width: 31.25rem) and (max-width: 65.56rem) {
+				background-image: url(../img/t-hero-renew.jpg);
+			}
+			@media screen and (max-width: 31.1875rem) {
+				background-image: url(../img/m-hero-renew.jpg);
+			}
+		}
+	}
+}

@@ -1,0 +1,96 @@
+/* Colors */
+#executive-leadership .title-section .hero {
+  margin-bottom: 0; }
+
+.leaders .name,
+.directors .name {
+  color: #2D7DAC;
+  font-family: "brandon_grotesqueblack";
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 0; }
+  .leaders .name a,
+  .directors .name a {
+    color: #2D7DAC;
+    text-decoration: none;
+    margin-top: 0;
+    padding-left: 4px;
+    margin-left: -8px;
+    border-left: 4px solid transparent;
+    transition: border .2s ease-in-out; }
+    .leaders .name a:focus,
+    .directors .name a:focus {
+      color: #2D7DAC;
+      outline: 0;
+      border-color: #7BCFFF; }
+    .leaders .name a:hover,
+    .directors .name a:hover {
+      text-decoration: underline; }
+.leaders p,
+.directors p {
+  font-family: "brandon_grotesque_regularRg";
+  margin-top: 0;
+  margin-bottom: 20px; }
+  .leaders p.note,
+  .directors p.note {
+    margin-bottom: 25px; }
+.leaders a,
+.directors a {
+  color: #333740;
+  display: block;
+  margin-top: 50px; }
+.leaders .tablet,
+.directors .tablet {
+  display: none; }
+.leaders .independent-accountants,
+.directors .independent-accountants {
+  border-top: 1px solid black;
+  padding-top: 1.15rem; }
+  .leaders .independent-accountants .name,
+  .directors .independent-accountants .name {
+    text-transform: none; }
+@media screen and (min-width: 37.5rem) and (max-width: 56.25rem) {
+  .leaders .inner-wrapper,
+  .directors .inner-wrapper {
+    max-width: 508px; }
+  .leaders .tablet,
+  .directors .tablet {
+    display: inline-block; }
+  .leaders .no-tablet,
+  .directors .no-tablet {
+    display: none; }
+  .leaders .column,
+  .directors .column {
+    width: 36%; }
+    .leaders .column.left,
+    .directors .column.left {
+      float: left; }
+    .leaders .column.right,
+    .directors .column.right {
+      float: right; } }
+@media screen and (min-width: 56.3125rem) {
+  .leaders .column,
+  .directors .column {
+    display: inline-block;
+    vertical-align: top; }
+  .leaders .column.left,
+  .directors .column.left {
+    width: 25%;
+    margin-right: 14%; }
+  .leaders .column.right,
+  .directors .column.right {
+    width: 60%; }
+  .leaders .sub-column,
+  .directors .sub-column {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top; }
+    .leaders .sub-column:nth-of-type(1),
+    .directors .sub-column:nth-of-type(1) {
+      margin-right: 18%; } }
+
+.leaders {
+  padding-bottom: 4rem; }
+
+.directors {
+  padding-bottom: 8rem; }

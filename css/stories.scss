@@ -1,0 +1,156 @@
+---
+---
+@import "variables";
+
+.hero {
+	&.story {
+		.video-play {
+			transition: outline .2s ease-in-out;
+			outline: 3px solid transparent !important;
+			&:focus {
+				outline: 3px solid $wcag-outline !important;
+			}
+		}
+		@media screen and (max-width: 56.25rem) {
+			&.video {
+				margin-bottom: 3rem;
+			}
+		}
+	}
+	
+	@media screen and (max-width: 48rem) {
+			//margin-bottom: 0;	
+	}
+	@media screen and (min-width: 56.3125rem) {
+		
+	}
+}
+.title-section {
+	&.story {
+		h1 {
+			margin: 0 0 24px;
+		}
+		.video-time {
+			margin: 20px 0 15px;
+		}
+		.description {
+			font-size: $wcag-min;
+			font-family: $medium;
+			color: $dark-gray;
+			margin: 0 0 25px;
+			text-transform: uppercase;
+		}
+		@media screen and (max-width: 37.4375rem) {
+			.inner-wrapper {
+				padding-top: 0;
+			}
+		}
+		
+	}
+}
+
+.prose-copy {
+	img {
+		margin-bottom: 2rem;
+		border-radius: 4px;
+	}
+	padding-bottom: 6rem;
+}
+#work-development-programs {
+	.blue-left {
+		max-width: 575px;
+		@media screen and (min-width: 56.3125rem) {
+			height: 165px;
+			.right {
+				width: 64%;
+				a {
+					padding-left: 4px;
+					border-left: 4px solid transparent;
+					margin-left: -8px;
+					transition: outline .2s ease-in-out;
+					&:focus {
+						border-color: $wcag-outline;
+						outline: 0;
+					}
+				}
+			}
+		}
+	}
+}
+#internship-success-story {
+	@media screen and (min-width: 56.3125rem) {
+		.blue-left {
+			height: 13.4375rem;
+		}
+	}
+}
+
+
+.blue-content {
+    padding-bottom: 6rem;
+    .inner-wrapper {
+        background-color: $medium-blue;
+        padding: 2rem;
+        color: white;
+        h2 {
+            color: white;
+            font-size: 2.5rem;
+            line-height: .87;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            font-family: $minion;
+            font-size: $wcag-min;
+        }
+		ul {
+			padding-left: 0px;
+			 li {
+				list-style: none;
+				margin-bottom: 2rem;
+				svg, span {
+					display: inline-block;
+					vertical-align: middle;
+				}
+				 
+				span {
+					margin-left: 1rem;
+					p {
+						font-family: $regular;  
+						font-size: 0.875rem;
+						margin: 0;
+						text-transform: uppercase;
+					}
+					strong {
+						font-family: $black;
+						font-weight: normal;
+						font-size: 1.875rem;
+						line-height: .9;
+					}
+				}
+
+
+			}
+		}
+       
+		@media screen and (min-width: 48.0625rem) {
+			.column {
+				width: 50%;
+				float: left;
+				&.left {
+					padding-right: 2rem;
+				}
+			}
+		}
+		@media screen and (max-width: 48rem) {
+			svg {
+				width: 23%;
+				
+			}
+			span {
+				width: 70%;
+				margin-left: 5% !important;
+			}
+		}
+		
+    }
+}

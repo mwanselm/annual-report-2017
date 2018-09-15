@@ -1,0 +1,238 @@
+---
+---
+@import "variables";
+
+#index {
+	.footer-carousel,
+    progress {
+		display: none;
+	}
+	main {
+		overflow-x: hidden;
+	}
+}
+//Focus States
+@media screen and (min-width: 48.06rem) {
+	.glic-logo,
+	.ar-title,
+	#menu ul li a,
+	.home-ready .inner-wrapper .column,
+	.social-share .addthis_toolbox a,
+	#footer #block-menu-menu-glic-social-media-menu a {
+		border-left: 4px solid transparent;
+		&:focus {
+			outline: none !important;
+			border-color: #7BCFFF !important;
+			transition: border-color .1s ease-in-out;
+		}
+	}
+
+	.ar-title {
+		&:focus {
+			//margin-left: -12px !important;
+		}
+	}
+
+	#menu ul li a {
+		&:focus {
+			margin-left: -11px !important;
+
+		}
+	}
+	#home-tabs .tl_section .tab-bottom .tab-content a {
+		&:focus {
+			outline: 2p solid #7BCFFF;
+		}
+	}
+
+	.ar-title,
+	#menu ul li a {
+		&:focus {
+			transition: border .1s ease-in-out, margin-left .1s ease-in-out;
+		}
+	}
+
+	#home-tabs .tl_section .inner-wrapper:focus {
+		outline: 0;
+		.tab-content {
+			border-left: 4px solid #7BCFFF !important;
+			outline: 0;
+			padding-left: 8px;
+		}
+	} 
+
+	.home-ready .inner-wrapper .column {
+		&:focus {
+			padding-left: 7px;
+			//margin-left: -11px;
+		}
+	}
+	.social-share .addthis_toolbox a {
+		padding-left: 7px;
+		margin-left: -11px;
+		border-left: 4px solid transparent;
+	}
+
+	#footer {
+		a {
+			border-left: 4px solid transparent;
+		}
+		#block-menu-menu-glic-social-media-menu a {
+			//width: 3.375rem !important;
+		}
+		#block-menu-menu-glic-footer-utility-menu a {
+			padding-left: 7px;
+			margin-left: -7px !important;
+		}
+	}
+}
+
+
+.home-ready {
+	padding: 45px 0 60px;
+	.inner-wrapper {
+		@media screen and (max-width: 65.56rem) {
+			width: 90.4%;
+		}
+		@media screen and (max-width: 48rem) {
+			max-width: 55%;
+            .column {
+                margin-bottom: 2rem;
+            }
+		}
+		@media screen and (min-width: 48.06rem) {
+			//height: 40vh;	
+            .column {
+                margin-right: 0;
+                .ready {
+                    margin-left: 0px !important;
+                }
+                &:nth-child(2) {
+                    width: 32%;
+                    //margin-right: 5%;
+                }
+                &:nth-child(3) {
+                    width: 32%;
+                    //margin-right: 3%;
+                }
+                &:nth-child(4) {
+                    width: 22%;
+					h3 {
+						margin-bottom: 0;
+						display: inline-block;
+					}
+					&:hover {
+						h3 {
+							border-bottom: 1px solid $navy-blue;
+						}
+					}
+                }
+                &:nth-child(5) {
+                    width: 14%;
+                }
+				&:hover {
+					p {
+						text-decoration: underline;
+					}
+				}
+            }
+		}
+		@media screen and (min-width: 56.3125rem) {
+			.column {
+				width: auto;
+				//margin-right: 10%;
+				float: left;
+				.small {
+					font-size: 1rem;
+				}
+				&.desktop {
+					//width: 15%;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	.column {
+		color: $navy-blue;
+		text-decoration: none;
+		display: block;
+		line-height: 1;
+		padding-left: 7px;
+		border-left: 4px solid transparent;
+		transition: border .2s ease-in-out;
+		@media screen and (min-width: 35.9375rem) {
+			&:nth-child(2) {
+				margin-left: -11px !important;
+			}
+		}
+		
+		> p {
+			font-size: 0.875rem;
+			margin: 0;
+			font-family: $medium;
+		}
+		.ready {
+			font-size: 2.5rem;
+			margin-top: 0;
+			margin-bottom: 7px;
+			span {
+			}
+			.ready-black {
+				margin-left: 2px;
+			}
+		}
+		.small {
+			margin-left: 3px;
+		}
+		&.financials {
+			font-size: 1.5rem;
+			font-family: $black;
+			h3 {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+.home-carousel,
+.home-ready {
+	.inner-wrapper {
+		@media screen and (min-width: 56.3125rem) {
+			max-width: 1120px;	
+		}
+		@media screen and (min-width: 35.9375rem) and (max-width: 56.25rem) {
+			max-width: inherit;
+			//padding: 40px 0 60px;
+			.social-share {
+				//margin-top: 20px;
+			}
+			.column {
+				width: 33% !important;
+				float: left;
+				display: inline-block;
+				vertical-align: top;
+				margin: 0;
+				//margin-right: 15px;
+				p {
+					
+				}
+				.ready {
+					font-size: 2rem;
+				}
+				.small {
+					max-width: 151px;
+				}
+				&.financials {
+					font-size: 1.25rem;
+					//width: 20%;
+					//margin-right: 20px;
+				}
+				&.desktop {
+					margin-right: 0;
+					display: none !important ;
+				}
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,386 @@
+/* Colors */
+* {
+  box-sizing: border-box; }
+
+.clear {
+  clear: both; }
+
+/* Tab styling (optional) */
+.tl_list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: left;
+  list-style: none; }
+
+[role="tablist"] [aria-selected] {
+  display: block;
+  border: none;
+  text-decoration: none; }
+
+/* Non-active tab hover */
+[role="tablist"] [aria-selected="false"]:hover {
+  background-color: rgba(35, 110, 206, 0.125); }
+
+/* Section styling (optional) */
+.tl_section {
+  border-radius: 0 0 4px 4px; }
+
+/* tab & panel colour */
+[role="tablist"] [aria-selected]:focus,
+[role="tablist"] [aria-selected="true"],
+[role="tabpanel"][aria-hidden="false"] {
+  color: white;
+  outline: 0; }
+
+[role="tabpanel"][aria-hidden="false"]:focus .tab-content {
+  outline: 0; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.tl_section[aria-hidden="false"] {
+  display: block;
+  -webkit-animation: fadeIn .8s;
+  animation: fadeIn .8s; }
+
+.tl_section[aria-hidden="true"] {
+  display: none; }
+
+/*
+  Red focus ring - so you can see where it's focussed.
+  Not required specifically but be sure keyboard users can tell where they are.
+*/
+/*
+Section styling (required)
+Removes hidden sections from the keychain.
+Only used when JavaScript is available.
+*/
+[role="tabpanel"][aria-hidden="false"] {
+  z-index: 14; }
+
+[role="tabpanel"][aria-hidden="true"] {
+  z-index: 2; }
+
+#home-tabs {
+  position: relative;
+  height: 34.375rem;
+  background-color: #328ABD; }
+  @media screen and (min-width: 31.25rem) and (max-width: 65.5625rem) {
+    #home-tabs {
+      height: 46.875rem; } }
+  @media screen and (max-width: 31.1875rem) {
+    #home-tabs {
+      height: 31.875rem; } }
+  #home-tabs .inner-wrapper {
+    max-width: 1120px;
+    width: 95%;
+    margin: 0 auto; }
+    @media screen and (max-width: 65.5625rem) {
+      #home-tabs .inner-wrapper {
+        width: 90.4%; } }
+    #home-tabs .inner-wrapper.tabs-wrapper {
+      z-index: 20;
+      position: relative; }
+  #home-tabs .tabs-left {
+    position: relative;
+    padding-top: 3.5rem;
+    z-index: 4;
+    width: 50%; }
+    #home-tabs .tabs-left h2 {
+      margin: 0; }
+    @media screen and (min-width: 31.25rem) and (max-width: 65.5625rem) {
+      #home-tabs .tabs-left {
+        padding-top: 2.3125rem; } }
+    @media screen and (max-width: 31.1875rem) {
+      #home-tabs .tabs-left {
+        width: 100%;
+        padding-top: 1.375rem; } }
+    @media screen and (max-width: 65.5625rem) {
+      #home-tabs .tabs-left {
+        width: 100%; }
+        #home-tabs .tabs-left .tl_list, #home-tabs .tabs-left .ready {
+          float: left !important; } }
+    #home-tabs .tabs-left .ready, #home-tabs .tabs-left .tl_list {
+      max-width: 560px;
+      float: right; }
+    #home-tabs .tabs-left .ready {
+      width: 100%;
+      font-size: 6.875rem;
+      color: white;
+      margin-bottom: 1rem; }
+      @media screen and (min-width: 65.625rem) {
+        #home-tabs .tabs-left .ready {
+          margin-right: 10px; } }
+      @media screen and (min-width: 31.25rem) and (max-width: 65.5625rem) {
+        #home-tabs .tabs-left .ready {
+          font-size: 6.625rem; } }
+      @media screen and (max-width: 31.1875rem) {
+        #home-tabs .tabs-left .ready {
+          font-size: 4.375rem;
+          margin-bottom: 1rem; } }
+    #home-tabs .tabs-left .tl_list {
+      display: inline-block; }
+      #home-tabs .tabs-left .tl_list li {
+        display: inline-block;
+        line-height: 1;
+        margin-right: 0.625rem;
+        color: #002550;
+        opacity: 0;
+        transition: opacity .2s ease-in-out; }
+        #home-tabs .tabs-left .tl_list li[role="presentation"] {
+          opacity: 1; }
+        #home-tabs .tabs-left .tl_list li a {
+          color: #002550;
+          font-size: 2.375rem;
+          letter-spacing: -.85px;
+          transition: color .2s ease-in-out;
+          font-family: "brandon_grotesqueblack"; }
+          @media screen and (min-width: 71.9375rem) {
+            #home-tabs .tabs-left .tl_list li a {
+              font-size: 2.375rem; } }
+          @media screen and (min-width: 65.625rem) and (max-width: 71.875rem) {
+            #home-tabs .tabs-left .tl_list li a {
+              font-size: 2.25rem; } }
+          @media screen and (min-width: 31.25rem) and (max-width: 65.5625rem) {
+            #home-tabs .tabs-left .tl_list li a {
+              font-size: 3.125rem; } }
+          @media screen and (max-width: 31.1875rem) {
+            #home-tabs .tabs-left .tl_list li a {
+              font-size: 1.875rem; } }
+        #home-tabs .tabs-left .tl_list li a:focus,
+        #home-tabs .tabs-left .tl_list li [aria-selected="true"] {
+          color: white;
+          outline: none; }
+        #home-tabs .tabs-left .tl_list li a:focus {
+          text-decoration: underline; }
+        #home-tabs .tabs-left .tl_list li a:hover {
+          color: white; }
+        @media screen and (max-width: 65.5625rem) {
+          #home-tabs .tabs-left .tl_list li a {
+            border-bottom: 2px solid transparent;
+            display: inline-block; }
+            #home-tabs .tabs-left .tl_list li a:focus {
+              border-color: white;
+              text-decoration: none; }
+          #home-tabs .tabs-left .tl_list li [aria-selected="true"] {
+            text-decoration: none; } }
+        @media screen and (max-width: 65.5625rem) {
+          #home-tabs .tabs-left .tl_list li {
+            line-height: .87; } }
+        @media screen and (max-width: 31.1875rem) {
+          #home-tabs .tabs-left .tl_list li {
+            display: block; }
+            #home-tabs .tabs-left .tl_list li a {
+              height: 1.6875rem;
+              margin-bottom: 2px; } }
+        #home-tabs .tabs-left .tl_list li.white a {
+          color: white; }
+      @media screen and (min-width: 31.25rem) and (max-width: 65.5625rem) {
+        #home-tabs .tabs-left .tl_list {
+          float: none !important;
+          display: block !important; }
+          #home-tabs .tabs-left .tl_list li {
+            display: block; } }
+    #home-tabs .tabs-left .btn-container {
+      position: relative;
+      float: left;
+      margin-top: .3rem; }
+      #home-tabs .tabs-left .btn-container.pause .pause {
+        display: block; }
+      #home-tabs .tabs-left .btn-container.pause .play {
+        display: none; }
+      #home-tabs .tabs-left .btn-container.play .play {
+        display: block; }
+      #home-tabs .tabs-left .btn-container.play .pause {
+        display: none; }
+      #home-tabs .tabs-left .btn-container button {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        background-color: transparent;
+        text-align: left;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        color: #001C38;
+        font-family: "brandon_grotesqueblack";
+        margin-left: -7px;
+        width: 15rem;
+        transition: all  .2s ease-in-out;
+        border-left: 4px solid transparent; }
+        #home-tabs .tabs-left .btn-container button svg {
+          display: inline-block;
+          margin-right: 0.5625rem;
+          vertical-align: middle; }
+        #home-tabs .tabs-left .btn-container button:focus {
+          border-left: 4px solid #7BCFFF;
+          outline: 0; }
+  #home-tabs .blue-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: rgba(50, 138, 189, 0.9);
+    z-index: 1; }
+    @media screen and (max-width: 65.5625rem) {
+      #home-tabs .blue-bg {
+        width: 100%;
+        background-color: rgba(50, 138, 189, 0.87); } }
+  #home-tabs .social-share {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    z-index: 15; }
+    #home-tabs .social-share button {
+      outline: 0;
+      background-color: transparent;
+      color: white; }
+    @media screen and (max-width: 56.25rem) {
+      #home-tabs .social-share {
+        display: block !important; } }
+  #home-tabs .tl_section {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 23.5rem;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: opacity .4s ease-in-out;
+    opacity: 0; }
+    #home-tabs .tl_section[role="tabpanel"] {
+      opacity: 1; }
+    #home-tabs .tl_section:focus {
+      outline: 0; }
+      #home-tabs .tl_section:focus .inner-wrapper {
+        outline: 0; }
+      #home-tabs .tl_section:focus .tab-content {
+        outline: 0; }
+    @media screen and (min-width: 31.25rem) and (max-width: 65.5625rem) {
+      #home-tabs .tl_section {
+        padding-top: 36.5rem; } }
+    @media screen and (max-width: 31.1875rem) {
+      #home-tabs .tl_section {
+        padding-top: 23.5rem;
+        background-position: center right; } }
+    #home-tabs .tl_section .inner-wrapper {
+      z-index: 10;
+      position: relative; }
+      #home-tabs .tl_section .inner-wrapper:focus {
+        outline: 0; }
+    #home-tabs .tl_section .tab-bottom {
+      width: 50%; }
+      @media screen and (max-width: 65.56rem) {
+        #home-tabs .tl_section .tab-bottom {
+          width: 100%; } }
+      #home-tabs .tl_section .tab-bottom .tab-content {
+        float: right;
+        width: 100%;
+        padding-right: 30px;
+        transition: all .2s ease-in-out; }
+        @media screen and (max-width: 65.56rem) {
+          #home-tabs .tl_section .tab-bottom .tab-content {
+            width: auto;
+            float: left;
+            padding-right: 0px; } }
+        #home-tabs .tl_section .tab-bottom .tab-content p {
+          text-transform: uppercase;
+          font-size: 1.16625rem;
+          color: white;
+          font-family: "brandon_grotesquemedium";
+          margin-top: 0;
+          max-width: 370px; }
+          @media screen and (max-width: 31.1875rem) {
+            #home-tabs .tl_section .tab-bottom .tab-content p {
+              line-height: 1;
+              padding-right: 20px; } }
+        #home-tabs .tl_section .tab-bottom .tab-content a {
+          display: inline-block;
+          background: #002550;
+          color: white;
+          font-family: "brandon_grotesqueblack";
+          border-radius: 4px;
+          height: 2.5625rem;
+          line-height: 2.6875rem;
+          padding-left: 0.875rem;
+          padding-right: 0.875rem;
+          text-decoration: none; }
+    #home-tabs .tl_section#A {
+      background-image: url(../img/d-hero-thrive.jpg); }
+      @media screen and (min-width: 31.25rem) and (max-width: 65.56rem) {
+        #home-tabs .tl_section#A {
+          background-image: url(../img/t-hero-thrive.jpg); } }
+      @media screen and (max-width: 31.1875rem) {
+        #home-tabs .tl_section#A {
+          background-image: url(../img/m-hero-thrive.jpg); } }
+    #home-tabs .tl_section#B {
+      background-image: url(../img/d-hero-protect.jpg); }
+      @media screen and (min-width: 31.25rem) and (max-width: 65.56rem) {
+        #home-tabs .tl_section#B {
+          background-image: url(../img/t-hero-protect.jpg); } }
+      @media screen and (max-width: 31.1875rem) {
+        #home-tabs .tl_section#B {
+          background-image: url(../img/m-hero-protect.jpg); } }
+    #home-tabs .tl_section#C {
+      background-image: url(../img/d-hero-future.jpg); }
+      @media screen and (min-width: 31.25rem) and (max-width: 65.56rem) {
+        #home-tabs .tl_section#C {
+          background-image: url(../img/t-hero-future.jpg); } }
+      @media screen and (max-width: 31.1875rem) {
+        #home-tabs .tl_section#C {
+          background-image: url(../img/m-hero-future.jpg); } }
+    #home-tabs .tl_section#D {
+      background-image: url(../img/d-hero-learn.jpg); }
+      @media screen and (min-width: 31.25rem) and (max-width: 65.56rem) {
+        #home-tabs .tl_section#D {
+          background-image: url(../img/t-hero-learn.jpg); } }
+      @media screen and (max-width: 31.1875rem) {
+        #home-tabs .tl_section#D {
+          background-image: url(../img/m-hero-learn.jpg); } }
+    #home-tabs .tl_section#E {
+      background-image: url(../img/d-hero-respond.jpg); }
+      @media screen and (min-width: 31.25rem) and (max-width: 65.56rem) {
+        #home-tabs .tl_section#E {
+          background-image: url(../img/t-hero-respond.jpg); } }
+      @media screen and (max-width: 31.1875rem) {
+        #home-tabs .tl_section#E {
+          background-image: url(../img/m-hero-respond.jpg); } }
+    #home-tabs .tl_section#F {
+      background-image: url(../img/d-hero-change.jpg); }
+      @media screen and (min-width: 31.25rem) and (max-width: 65.56rem) {
+        #home-tabs .tl_section#F {
+          background-image: url(../img/t-hero-change.jpg); } }
+      @media screen and (max-width: 31.1875rem) {
+        #home-tabs .tl_section#F {
+          background-image: url(../img/m-hero-change.jpg); } }
+    #home-tabs .tl_section#G {
+      background-image: url(../img/d-hero-grow.jpg); }
+      @media screen and (min-width: 31.25rem) and (max-width: 65.56rem) {
+        #home-tabs .tl_section#G {
+          background-image: url(../img/t-hero-grow.jpg); } }
+      @media screen and (max-width: 31.1875rem) {
+        #home-tabs .tl_section#G {
+          background-image: url(../img/m-hero-grow.jpg); } }
+    #home-tabs .tl_section#H {
+      background-image: url(../img/d-hero-renew.jpg); }
+      @media screen and (min-width: 31.25rem) and (max-width: 65.56rem) {
+        #home-tabs .tl_section#H {
+          background-image: url(../img/t-hero-renew.jpg); } }
+      @media screen and (max-width: 31.1875rem) {
+        #home-tabs .tl_section#H {
+          background-image: url(../img/m-hero-renew.jpg); } }

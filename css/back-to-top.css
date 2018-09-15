@@ -1,0 +1,67 @@
+/* Colors */
+.top-text {
+  margin-top: 35px;
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  color: #e1e1e1; }
+
+.cd-top {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  z-index: 100;
+  position: fixed;
+  bottom: 65px;
+  right: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  white-space: nowrap;
+  background: #303139 url(../img/back-to-top.svg) no-repeat center 30%;
+  background-size: 30%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+  text-decoration: none;
+  border-radius: 3px; }
+.cd-top:hover {
+	text-decoration: none;
+}
+  .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s, bottom .4s ease-in-out;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s, bottom .4s ease-in-out;
+    transition: opacity .3s 0s, visibility 0s 0s, bottom .4s ease-in-out; }
+  .cd-top.cd-is-visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1; }
+  .cd-top.cd-fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .95; }
+  .no-touch .cd-top:hover {
+    opacity: 1; }
+.footer-carousel-up .cd-top {
+	bottom: 185px;
+}
+
+  @media only screen and (min-width: 768px) {
+    .cd-top {
+      right: 35px;
+      bottom: 50px;} 
+	  .footer-carousel-up .cd-top {
+		  bottom: 180px;
+	  }
+}
+  @media only screen and (min-width: 1024px) {
+    .cd-top {
+      height: 60px;
+      width: 60px;
+      right: 40px;
+      bottom: 65px; } }
+
+/*# sourceMappingURL=back-to-top.css.map */

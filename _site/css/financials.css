@@ -1,0 +1,493 @@
+/* Colors */
+.financial-information .inner-wrapper,
+.highlights .inner-wrapper,
+.ratings .inner-wrapper {
+  max-width: 507px; }
+  @media screen and (max-width: 48rem) {
+    .financial-information .inner-wrapper,
+    .highlights .inner-wrapper,
+    .ratings .inner-wrapper {
+      width: 82.13% !important; } }
+  @media screen and (min-width: 56.3125rem) {
+    .financial-information .inner-wrapper,
+    .highlights .inner-wrapper,
+    .ratings .inner-wrapper {
+      max-width: 770px; } }
+
+.highlights .column .info-block, .ratings .column .info-block {
+  border-radius: 2.64px;
+  background-color: #f4f4f7;
+  padding: 12px 20px 10px;
+  margin-bottom: 23px;
+  font-family: "brandon_grotesqueblack"; }
+  @media screen and (min-width: 48.0625rem) and (max-width: 56.25rem) {
+    .highlights .column .info-block, .ratings .column .info-block {
+      height: 91px; } }
+  @media screen and (min-width: 48.06rem) {
+    .highlights .column .info-block, .ratings .column .info-block {
+      margin-bottom: 3.75rem; } }
+  .highlights .column .info-block.title, .ratings .column .info-block.title {
+    background-color: #328ABD;
+    color: white;
+    font-size: 1.625rem;
+    padding: 15px 31px 42px 26px; }
+    @media screen and (min-width: 56.3125rem) {
+      .highlights .column .info-block.title, .ratings .column .info-block.title {
+        padding-top: 28px; } }
+    .highlights .column .info-block.title p, .ratings .column .info-block.title p {
+      font-size: 0.75rem;
+      font-family: "Minion Pro"; }
+    @media screen and (min-width: 56.3125rem) {
+      .highlights .column .info-block.title, .ratings .column .info-block.title {
+        height: 148px; }
+        .highlights .column .info-block.title p, .ratings .column .info-block.title p {
+          font-size: 1rem; } }
+  .highlights .column .info-block h2, .highlights .column .info-block h3, .ratings .column .info-block h2, .ratings .column .info-block h3 {
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1; }
+  .highlights .column .info-block h2, .ratings .column .info-block h2 {
+    font-size: 1.625rem;
+    color: white; }
+    @media screen and (min-width: 56.3125rem) {
+      .highlights .column .info-block h2, .ratings .column .info-block h2 {
+        font-size: 2.5rem; } }
+  .highlights .column .info-block h3, .ratings .column .info-block h3 {
+    border-bottom: 1px solid #A2AAC1;
+    font-size: 0.875rem;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+    color: #002550; }
+  .highlights .column .info-block p, .ratings .column .info-block p {
+    margin: 0;
+    line-height: 1; }
+  .highlights .column .info-block .current p,
+  .highlights .column .info-block .previous p,
+  .highlights .column .info-block .rating p,
+  .highlights .column .info-block .description p, .ratings .column .info-block .current p,
+  .ratings .column .info-block .previous p,
+  .ratings .column .info-block .rating p,
+  .ratings .column .info-block .description p {
+    font-size: 1.75rem; }
+    .highlights .column .info-block .current p.year,
+    .highlights .column .info-block .previous p.year,
+    .highlights .column .info-block .rating p.year,
+    .highlights .column .info-block .description p.year, .ratings .column .info-block .current p.year,
+    .ratings .column .info-block .previous p.year,
+    .ratings .column .info-block .rating p.year,
+    .ratings .column .info-block .description p.year {
+      font-family: "brandon_grotesquebold";
+      margin-bottom: 3px;
+      font-size: 1rem;
+      color: #002550; }
+  .highlights .column .info-block .current,
+  .highlights .column .info-block .rating, .ratings .column .info-block .current,
+  .ratings .column .info-block .rating {
+    width: 55%;
+    float: left; }
+  .highlights .column .info-block .current, .ratings .column .info-block .current {
+    color: #002550; }
+  .highlights .column .info-block .previous, .ratings .column .info-block .previous {
+    color: #6F91A9; }
+  .highlights .column .info-block .previous,
+  .highlights .column .info-block .description, .ratings .column .info-block .previous,
+  .ratings .column .info-block .description {
+    width: 40%;
+    float: right; }
+  @media screen and (min-width: 48rem) {
+    .highlights .column .info-block, .ratings .column .info-block {
+      padding: 12px 14px 10px; }
+      .highlights .column .info-block h3, .ratings .column .info-block h3 {
+        font-size: 0.6875rem; }
+      .highlights .column .info-block .current p, .highlights .column .info-block .previous p, .ratings .column .info-block .current p, .ratings .column .info-block .previous p {
+        font-size: 1.625rem; }
+        .highlights .column .info-block .current p.year, .highlights .column .info-block .previous p.year, .ratings .column .info-block .current p.year, .ratings .column .info-block .previous p.year {
+          font-size: 1rem; }
+      .highlights .column .info-block .description, .ratings .column .info-block .description {
+        font-size: 0.6875rem; } }
+  @media screen and (min-width: 56.3125rem) {
+    .highlights .column .info-block, .ratings .column .info-block {
+      padding: 23px 22px 25px 22px; }
+      .highlights .column .info-block h3, .ratings .column .info-block h3 {
+        font-size: 1rem;
+        margin-bottom: 12px;
+        padding-bottom: 14px; }
+      .highlights .column .info-block .current p, .highlights .column .info-block .previous p, .ratings .column .info-block .current p, .ratings .column .info-block .previous p {
+        font-size: 2.25rem; }
+        .highlights .column .info-block .current p.year, .highlights .column .info-block .previous p.year, .ratings .column .info-block .current p.year, .ratings .column .info-block .previous p.year {
+          font-size: 1.16625rem; } }
+.highlights .column .disclaimer, .ratings .column .disclaimer {
+  font-size: 0.75rem;
+  margin-top: -8px; }
+  .highlights .column .disclaimer.empty, .ratings .column .disclaimer.empty {
+    height: 17px;
+    margin-bottom: 12px; }
+  @media screen and (min-width: 48.06rem) {
+    .highlights .column .disclaimer, .ratings .column .disclaimer {
+      margin-top: -3.25rem;
+      margin-bottom: 2.65rem; }
+      .highlights .column .disclaimer.empty, .ratings .column .disclaimer.empty {
+        margin-bottom: 2.54rem; } }
+  @media screen and (min-width: 48.0625rem) and (max-width: 56.25rem) {
+    .highlights .column .disclaimer#operating-income, .ratings .column .disclaimer#operating-income {
+      margin-bottom: 1.9375rem; } }
+@media screen and (min-width: 48.06rem) {
+  .highlights .column, .ratings .column {
+    float: left;
+    width: 48%;
+    margin-right: 4%; }
+    .highlights .column.second, .ratings .column.second {
+      margin-right: 0; } }
+.highlights .disclaimer, .ratings .disclaimer {
+  font-family: "Minion Pro"; }
+
+@media screen and (min-width: 48.06rem) {
+  .highlights {
+    margin-bottom: 3.75rem; } }
+
+@media screen and (min-width: 56.3125rem) {
+  .ratings .column .info-block.title {
+    height: 147px; } }
+.ratings .column .info-block .rating {
+  font-size: 2.8825rem;
+  color: #328ABD; }
+.ratings .column .info-block .description {
+  font-size: 0.875rem;
+  color: #002550; }
+@media screen and (min-width: 56.3125rem) {
+  .ratings .column .info-block .rating {
+    font-size: 4.375rem;
+    margin-right: 10px;
+    line-height: .8; }
+  .ratings .column .info-block .description {
+    font-size: 1rem; } }
+@media screen and (min-width: 48.0625rem) and (max-width: 56.25rem) {
+  .ratings .column .info-block.title {
+    padding-bottom: 52px; }
+  .ratings .column .info-block .description {
+    font-size: 0.6875rem; } }
+.ratings .disclaimer {
+  font-size: 0.875rem; }
+  @media screen and (min-width: 56.3125rem) {
+    .ratings .disclaimer {
+      font-size: 1rem; } }
+
+section.financials {
+  padding-bottom: 90px; }
+  section.financials .inner-wrapper {
+    max-width: 507px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media screen and (max-width: 48rem) {
+      section.financials .inner-wrapper {
+        width: 82.13% !important; } }
+    @media screen and (min-width: 56.3125rem) {
+      section.financials .inner-wrapper {
+        max-width: 770px; } }
+  section.financials .accordions,
+  section.financials .panel {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 636px; }
+    @media screen and (min-width: 56.3125rem) {
+      section.financials .accordions,
+      section.financials .panel {
+        max-width: 771px; } }
+  section.financials .accordions .accordion {
+    background-color: #002D5B;
+    color: white;
+    cursor: pointer;
+    padding: 17px 5%;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+    section.financials .accordions .accordion .button-text {
+      float: left;
+      font-family: "brandon_grotesqueblack";
+      font-size: 0.875rem; }
+    section.financials .accordions .accordion br {
+      display: none; }
+    @media screen and (max-width: 26rem) {
+      section.financials .accordions .accordion.one, section.financials .accordions .accordion.two {
+        line-height: 1.33; }
+        section.financials .accordions .accordion.one br, section.financials .accordions .accordion.two br {
+          display: inline; }
+        section.financials .accordions .accordion.one .plus-minus, section.financials .accordions .accordion.two .plus-minus {
+          margin-top: 11px; } }
+    @media screen and (max-width: 48rem) {
+      section.financials .accordions .accordion {
+        width: 82.13% !important; } }
+    @media screen and (min-width: 56.3125rem) {
+      section.financials .accordions .accordion {
+        font-size: 1rem; } }
+  section.financials .accordions .panel .svg-graphic {
+    width: 84%;
+    max-width: 400px;
+    margin: 0rem auto 6rem; }
+    section.financials .accordions .panel .svg-graphic svg {
+      display: block;
+      width: 98%;
+      margin: 0 auto; }
+  section.financials .accordions .panel table {
+    width: 100%;
+    margin-bottom: 25px; }
+    section.financials .accordions .panel table tr th, section.financials .accordions .panel table tr td {
+      line-height: 1; }
+      section.financials .accordions .panel table tr th:nth-child(1), section.financials .accordions .panel table tr td:nth-child(1) {
+        padding-left: 14%;
+        width: 50%; }
+      section.financials .accordions .panel table tr th:nth-child(2), section.financials .accordions .panel table tr td:nth-child(2) {
+        width: 24%; }
+      section.financials .accordions .panel table tr th:nth-child(3), section.financials .accordions .panel table tr td:nth-child(3) {
+        padding-right: 12%; }
+    section.financials .accordions .panel table tr th {
+      border-bottom: 1px solid #C4C6C3;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 8px;
+      padding-right: 8px;
+      color: #2D7DAC;
+      font-size: 0.875rem;
+      font-family: "brandon_grotesqueblack";
+      line-height: 1;
+      font-weight: normal; }
+      section.financials .accordions .panel table tr th:nth-child(1) {
+        text-align: left;
+        text-transform: uppercase; }
+      section.financials .accordions .panel table tr th:nth-child(2), section.financials .accordions .panel table tr th:nth-child(3) {
+        text-align: right; }
+      @media screen and (min-width: 56.3125rem) {
+        section.financials .accordions .panel table tr th {
+          font-size: 1rem; } }
+    section.financials .accordions .panel table tr td {
+      font-family: "Minion Pro";
+      padding: 5px 8px;
+      vertical-align: top; }
+      section.financials .accordions .panel table tr td:nth-child(2), section.financials .accordions .panel table tr td:nth-child(3) {
+        text-align: right; }
+    section.financials .accordions .panel table tr.blue td {
+      padding-top: 10px;
+      padding-bottom: 6px;
+      font-family: "brandon_grotesqueblack";
+      color: #2D7DAC;
+      text-transform: uppercase;
+      font-size: 0.875rem; }
+      section.financials .accordions .panel table tr.blue td strong {
+        font-weight: normal; }
+      @media screen and (min-width: 56.3125rem) {
+        section.financials .accordions .panel table tr.blue td {
+          font-size: 1rem; } }
+    section.financials .accordions .panel table tr.sum td {
+      font-weight: bold;
+      border-bottom: 1px solid #C4C6C3;
+      padding-bottom: 10px;
+      color: black; }
+    section.financials .accordions .panel table tr.sum + tr td {
+      padding-top: 15px; }
+    section.financials .accordions .panel table tr.sum.last td {
+      border-bottom: 0px;
+      padding-top: 10px;
+      border-top: 1px solid #C4C6C3; }
+    section.financials .accordions .panel table tr.sum.no-bold td {
+      font-weight: normal; }
+    section.financials .accordions .panel table tr:nth-child(2) td {
+      padding-top: 16px; }
+    section.financials .accordions .panel table#colors {
+      margin-bottom: 0; }
+      section.financials .accordions .panel table#colors tr td:nth-child(1).blue:before, section.financials .accordions .panel table#colors tr td:nth-child(1).light-blue:before, section.financials .accordions .panel table#colors tr td:nth-child(1).navy:before, section.financials .accordions .panel table#colors tr td:nth-child(1).green:before, section.financials .accordions .panel table#colors tr td:nth-child(1).yellow:before, section.financials .accordions .panel table#colors tr td:nth-child(1).orange:before, section.financials .accordions .panel table#colors tr td:nth-child(1).grey:before, section.financials .accordions .panel table#colors tr td:nth-child(1).dark-grey:before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        float: left;
+        margin: 2px 6px 0 0; }
+      section.financials .accordions .panel table#colors tr:nth-child(2) td:nth-child(1):before {
+        background: url("../img/invest-01_blue.svg") no-repeat; }
+      section.financials .accordions .panel table#colors tr:nth-child(3) td:nth-child(1):before {
+        background: url("../img/invest-02_lightblue.svg") no-repeat; }
+      section.financials .accordions .panel table#colors tr:nth-child(4) td:nth-child(1):before {
+        background: url("../img/invest-03_navy.svg") no-repeat; }
+      section.financials .accordions .panel table#colors tr:nth-child(5) td:nth-child(1):before {
+        background: url("../img/invest-04_green.svg") no-repeat; }
+      section.financials .accordions .panel table#colors tr:nth-child(6) td:nth-child(1):before {
+        background: url("../img/invest-05_yellow.svg") no-repeat; }
+      section.financials .accordions .panel table#colors tr:nth-child(7) td:nth-child(1):before {
+        background: url("../img/invest-06_orange.svg") no-repeat; }
+      section.financials .accordions .panel table#colors tr:nth-child(8) td:nth-child(1):before {
+        background: url("../img/invest-07_grey.svg") no-repeat; }
+      section.financials .accordions .panel table#colors tr:nth-child(9) td:nth-child(1):before {
+        background: url("../img/invest-08_darkgrey.svg") no-repeat; }
+  section.financials .accordions .panel h3, section.financials .accordions .panel .note {
+    width: 74%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+  section.financials .accordions .panel h3 {
+    color: #2D7DAC;
+    font-family: "brandon_grotesqueblack";
+    font-size: 1rem;
+    text-transform: uppercase; }
+  section.financials .accordions .disclaimer {
+    font-family: "Minion Pro"; }
+  @media screen and (min-width: 48rem) {
+    section.financials .accordions .accordion {
+      padding-left: 18.97px;
+      padding-right: 18px; }
+    section.financials .accordions .panel table tr td:nth-child(1), section.financials .accordions .panel table tr th:nth-child(1) {
+      padding-left: 18.97px; }
+    section.financials .accordions .panel table tr td:nth-child(3), section.financials .accordions .panel table tr th:nth-child(3) {
+      padding-right: 18px; }
+    section.financials .accordions .panel h3, section.financials .accordions .panel .note {
+      width: 100%;
+      padding-left: 18.97px;
+      padding-right: 18px; } }
+  @media screen and (min-width: 56.3125rem) {
+    section.financials .accordions .panel table tr th {
+      padding-top: 25px;
+      padding-bottom: 25px; }
+    section.financials .accordions .panel table tr.blue td {
+      padding-top: 16px;
+      padding-bottom: 12px; } }
+
+.invisible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* --------------- styles for accordion -----------------------*/
+/* accordion */
+.accordions button {
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: 97% center;
+  background-image: url(../img/accordion_plus.svg); }
+  .accordions button[aria-expanded="true"] {
+    background-image: url(../img/accordion_minus.svg);
+    background-size: 14px 4px; }
+
+.minimalist-accordion__header,
+.minimalist-noanim-accordion__header {
+  display: block;
+  background-color: #002D5B;
+  color: white;
+  cursor: pointer;
+  padding: 17px 3%;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "brandon_grotesqueblack";
+  font-size: 0.875rem;
+  border: 3px solid transparent;
+  transition: border-color .2s ease-in-out; }
+  @media screen and (max-width: 48rem) {
+    .minimalist-accordion__header,
+    .minimalist-noanim-accordion__header {
+      width: 82.3%; } }
+  .minimalist-accordion__header:hover,
+  .minimalist-noanim-accordion__header:hover {
+    background-color: #002D5B !important; }
+  .minimalist-accordion__header:focus,
+  .minimalist-noanim-accordion__header:focus {
+    border-color: #7BCFFF;
+    outline: 0; }
+
+[aria-expanded="true"].minimalist-accordion__header::before,
+[aria-expanded="true"].minimalist-noanim-accordion__header::before {
+  transform: rotate(90deg);
+  transform-origin: 50% 50%; }
+
+.minimalist-accordion__title,
+.minimalist-noanim-accordion__title {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.minimalist-accordion__panel {
+  display: block;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: visibility 0s ease, max-height 1s ease, opacity 1s ease;
+  transition: visibility 0s ease, max-height 1s ease, opacity 1s ease;
+  max-height: 200em;
+  /* magic number for max-height = enough height */
+  visibility: visible;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  margin: 0;
+  padding: 0; }
+
+/* This is the hidden state */
+[aria-hidden=true].minimalist-accordion__panel {
+  display: block;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition-delay: 1s, 0s, 0s;
+  transition-delay: 1s, 0s, 0s;
+  margin: 0;
+  padding: 0; }
+
+.minimalist-noanim-accordion__panel {
+  display: block; }
+
+[aria-hidden=true].minimalist-noanim-accordion__panel {
+  display: none; }
+
+.plus-minus {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  float: right;
+  margin-top: 4px;
+  /* Vertical line */
+  /* horizontal line */ }
+  .plus-minus:before, .plus-minus:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    transition: transform 0.25s ease-out; }
+  .plus-minus:before {
+    top: 0;
+    left: 50%;
+    width: 3.25px;
+    height: 100%;
+    margin-left: -1.6px; }
+  .plus-minus:after {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3.25px;
+    margin-top: -1.5px; }
+
+[aria-expanded="true"].minimalist-accordion__header .plus-minus {
+  cursor: pointer; }
+  [aria-expanded="true"].minimalist-accordion__header .plus-minus:before {
+    transform: rotate(90deg); }
+  [aria-expanded="true"].minimalist-accordion__header .plus-minus:after {
+    transform: rotate(180deg); }

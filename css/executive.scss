@@ -1,0 +1,121 @@
+---
+---
+@import "variables";
+
+
+#executive-leadership {
+	.title-section {
+		.hero {
+			margin-bottom: 0;
+		}
+		@media screen and (min-width: 48.03rem) {
+			
+		}
+		@media screen and (max-width: 48rem) {
+			.hero {
+				
+			}
+		}
+	}
+}
+
+.leaders,
+.directors {
+	
+	.name {
+		color: $medium-blue-wcag;
+		font-family: $black;
+		text-transform: uppercase;
+		font-size: 1rem;
+		margin: 0;
+		a {
+			color: $medium-blue-wcag;
+			text-decoration: none;
+			margin-top: 0;
+			padding-left: 4px;
+			margin-left: -8px;
+			border-left: 4px solid transparent;
+			transition: border .2s ease-in-out;
+			&:focus {
+				color: $medium-blue-wcag;
+				outline: 0;
+				border-color: $wcag-outline;
+			}
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	p {
+		font-family: $regular;
+		margin-top: 0;
+		margin-bottom: 20px;
+		&.note {
+			margin-bottom: 25px;
+		}
+	}
+	a {
+		color: $dark-gray;
+		display: block;
+		margin-top: 50px;
+	}
+	.tablet {
+		display: none;
+	}
+	.independent-accountants {
+		border-top: 1px solid black;
+		padding-top: 1.15rem;
+		.name {
+			text-transform: none;
+		}
+	}
+	@media screen and (min-width: 37.5rem) and (max-width: 56.25rem) {
+		.inner-wrapper {
+			//width: 66%;
+			max-width: 508px;
+		}
+		.tablet {
+			display: inline-block;
+		}
+		.no-tablet {
+			display: none;
+		}
+		.column {
+			width: 36%;
+			&.left {
+				float: left;
+			}
+			&.right {
+				float: right;
+			}
+		}	
+	}
+	@media screen and (min-width: 56.3125rem) {
+		.column {
+			display: inline-block;
+			vertical-align: top;
+		}
+		.column.left {
+			width: 25%;
+			margin-right: 14%;
+		}
+		.column.right {
+			width: 60%;
+		}
+		.sub-column {
+			width: 40%;
+			display: inline-block;
+			vertical-align: top;
+			&:nth-of-type(1) {
+				margin-right: 18%;
+				
+			}
+		}
+	}
+}
+.leaders {
+	padding-bottom: 4rem;
+}
+.directors {
+	padding-bottom: 8rem;
+}

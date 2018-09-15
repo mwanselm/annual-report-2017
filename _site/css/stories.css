@@ -1,0 +1,96 @@
+/* Colors */
+.hero.story .video-play {
+  transition: outline .2s ease-in-out;
+  outline: 3px solid transparent !important; }
+  .hero.story .video-play:focus {
+    outline: 3px solid #7BCFFF !important; }
+@media screen and (max-width: 56.25rem) {
+  .hero.story.video {
+    margin-bottom: 3rem; } }
+
+.title-section.story h1 {
+  margin: 0 0 24px; }
+.title-section.story .video-time {
+  margin: 20px 0 15px; }
+.title-section.story .description {
+  font-size: 1.16625rem;
+  font-family: "brandon_grotesquemedium";
+  color: #333740;
+  margin: 0 0 25px;
+  text-transform: uppercase; }
+@media screen and (max-width: 37.4375rem) {
+  .title-section.story .inner-wrapper {
+    padding-top: 0; } }
+
+.prose-copy {
+  padding-bottom: 6rem; }
+  .prose-copy img {
+    margin-bottom: 2rem;
+    border-radius: 4px; }
+
+#work-development-programs .blue-left {
+  max-width: 575px; }
+  @media screen and (min-width: 56.3125rem) {
+    #work-development-programs .blue-left {
+      height: 165px; }
+      #work-development-programs .blue-left .right {
+        width: 64%; }
+        #work-development-programs .blue-left .right a {
+          padding-left: 4px;
+          border-left: 4px solid transparent;
+          margin-left: -8px;
+          transition: outline .2s ease-in-out; }
+          #work-development-programs .blue-left .right a:focus {
+            border-color: #7BCFFF;
+            outline: 0; } }
+
+@media screen and (min-width: 56.3125rem) {
+  #internship-success-story .blue-left {
+    height: 13.4375rem; } }
+
+.blue-content {
+  padding-bottom: 6rem; }
+  .blue-content .inner-wrapper {
+    background-color: #328ABD;
+    padding: 2rem;
+    color: white; }
+    .blue-content .inner-wrapper h2 {
+      color: white;
+      font-size: 2.5rem;
+      line-height: .87;
+      margin-bottom: 1.5rem; }
+    .blue-content .inner-wrapper p {
+      font-family: "Minion Pro";
+      font-size: 1.16625rem; }
+    .blue-content .inner-wrapper ul {
+      padding-left: 0px; }
+      .blue-content .inner-wrapper ul li {
+        list-style: none;
+        margin-bottom: 2rem; }
+        .blue-content .inner-wrapper ul li svg, .blue-content .inner-wrapper ul li span {
+          display: inline-block;
+          vertical-align: middle; }
+        .blue-content .inner-wrapper ul li span {
+          margin-left: 1rem; }
+          .blue-content .inner-wrapper ul li span p {
+            font-family: "brandon_grotesque_regularRg";
+            font-size: 0.875rem;
+            margin: 0;
+            text-transform: uppercase; }
+          .blue-content .inner-wrapper ul li span strong {
+            font-family: "brandon_grotesqueblack";
+            font-weight: normal;
+            font-size: 1.875rem;
+            line-height: .9; }
+    @media screen and (min-width: 48.0625rem) {
+      .blue-content .inner-wrapper .column {
+        width: 50%;
+        float: left; }
+        .blue-content .inner-wrapper .column.left {
+          padding-right: 2rem; } }
+    @media screen and (max-width: 48rem) {
+      .blue-content .inner-wrapper svg {
+        width: 23%; }
+      .blue-content .inner-wrapper span {
+        width: 70%;
+        margin-left: 5% !important; } }

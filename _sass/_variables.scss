@@ -1,0 +1,48 @@
+// _variables.scss
+
+/* Colors */
+
+$dark-blue: #000d2f;
+$navy-blue: #002550;
+$medium-blue: #328ABD;
+$ready-blue: #6F91A9;
+$blue-gray: #6F91A9;
+$gray: #5a5a5f;
+$light-gray: #f4f4f7;
+$gold: #c1a236;
+$gold2: #c7a204;
+$dark-gray: #333740;
+$wcag-outline: #7BCFFF;
+$medium-blue-wcag: #2D7DAC;
+$bg-blue-wcag: #29739F;
+
+
+//Breakpoints
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+//Mobile Spacing
+$phase-1-gutter: 34px;
+$mobile-gutter: 8px;
+
+$gutter: .5em !global;
+
+// Brandon Font Weights
+
+$thin: 'brandon_grotesquethin';
+$light: 'brandon_grotesquelight';
+$regular: 'brandon_grotesque_regularRg';
+$medium: 'brandon_grotesquemedium';
+$bold: 'brandon_grotesquebold';
+$black: 'brandon_grotesqueblack';
+
+$minion: 'Minion Pro';
+
+
+//Font Size
+
+$wcag-min: 1.16625rem;
+
+
+

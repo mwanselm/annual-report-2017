@@ -1,0 +1,69 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title data-la-initdispnone="true">{% if page.fulltitle %}{{page.fulltitle}}{% endif %}</title>
+	<meta name="description" content="{% if page.excerpt %}{{page.excerpt}}{% else %}{{site.tagline}}{% endif %}">
+	<meta name="keywords" content="{% if page.keywords %}{{page.keywords}}{% endif %}">
+<!--	<link rel="icon" type="image/png" href="./favicon.png">-->
+	<link rel="shortcut icon" href="./favicon.ico">
+
+	<!-- Google+ -->
+	<meta itemprop="name" content="{% if page.fulltitle %}{{page.fulltitle}}{% else %}{{page.title}} | {{ site.title }} {% endif %}">
+	<meta itemprop="description" content="{% if page.excerpt %}{{page.excerpt}}{% else %}{{site.tagline}}{% endif %}">
+	<meta itemprop="image" content="{% if page.image %}{{page.image}}{% endif %}">
+
+	<!-- Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="{% if page.fulltitle %}{{page.fulltitle}}{% else %}{{page.title}} | {{ site.title }} {% endif %}" />
+	<meta property="og:description" content="{% if page.excerpt %}{{page.excerpt}}{% else %}{{site.tagline}}{% endif %}" />
+	<meta property="og:image" content="{% if page.image %}{{page.image}}{% endif %}" />
+	<meta property="og:url" content="http://www.guardianlife.com/annual-report-2017{{page.url}}" />
+	<meta property="og:site_name" content="{{ site.title }} " />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="{% if page.fulltitle %}{{page.fulltitle}}{% else %}{{page.title}} | {{ site.title }} {% endif %}">
+	<meta name="twitter:description" content="{% if page.excerpt %}{{page.excerpt}}{% else %}{{site.tagline}}{% endif %}">
+	<meta name="twitter:image" content="{% if page.image %}{{page.image}}{% endif %}">
+	<meta name="twitter:url" content="http://www.guardianlife.com/annual-report-2017{{page.url}}">
+
+	<!-- Webtrends -->
+	<META name='WT.cg_ss' content='Annual Report'>
+	<META name='WT.cg_n' content='Annual Report 2017'>
+	<META name='WT.cg_s' content='{{page.webtrends_cg_s}}'>
+
+
+<!--	<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
+	<!-- Place favicon.ico in the root directory -->
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  
+
+		
+		
+		
+<script>
+var dataLayer = window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+'pageCategory':  jQuery('meta[name="WT.cg_n"]').attr("content"),
+'pageSubcategory':  jQuery('meta[name="WT.cg_s"]').attr("content"),
+'pageSection': jQuery('meta[name="WT.cg_ss"]').attr("content"),
+'pageType': ''
+});
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];
+w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;
+j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=7YwNLAUuV55rOdeSqKGawQ&gtm_preview=env-2&gtm_cookies_win=x';
+f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P5VRTPM');</script>
+<!-- End Google Tag Manager -->
+
+		
+</head>

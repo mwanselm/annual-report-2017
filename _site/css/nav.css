@@ -1,0 +1,209 @@
+/* Colors */
+@media screen and (max-width: 87.5rem) {
+  .glic-logo {
+    position: relative; }
+
+  .ar-title,
+  .glic-logo {
+    z-index: 10; }
+
+  #menu {
+    z-index: 9; }
+
+  .ham-open {
+    overflow: hidden; }
+    .ham-open .ar-title,
+    .ham-open .glic-logo {
+      z-index: 97; }
+    .ham-open #menu {
+      z-index: 98; } }
+.nav-down header {
+  top: 0; }
+
+#menu {
+  transition: top .4s ease-in-out; }
+
+.nav-up header, .nav-up #menu {
+  top: -65px !important; }
+
+header {
+  background-color: #002550;
+  position: relative;
+  z-index: 21;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top .4s ease-in-out; }
+  header .inner-wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 12px 33px 11px;
+    position: relative; }
+    header .inner-wrapper a {
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none; }
+      header .inner-wrapper a:hover {
+        text-decoration: underline; }
+    header .inner-wrapper .glic-logo,
+    header .inner-wrapper .ar-title,
+    header .inner-wrapper .nav-links {
+      display: inline-block;
+      vertical-align: middle; }
+    header .inner-wrapper .glic-logo {
+      width: 173px;
+      background: url(../img/logo_guardian.svg) no-repeat center right;
+      margin-left: -13px;
+      background-size: 160px 42px;
+      height: 42px;
+      display: inline-block; }
+      header .inner-wrapper .glic-logo svg {
+        display: inline-block;
+        vertical-align: middle; }
+    header .inner-wrapper .ar-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-family: "brandon_grotesqueblack";
+      padding-left: 10px;
+      margin-left: -10px;
+      transition: opacity .2s ease-in-out;
+      opacity: 1; }
+    header .inner-wrapper #menu {
+      float: right; }
+      header .inner-wrapper #menu ul {
+        margin: 0; }
+        header .inner-wrapper #menu ul li {
+          display: inline-block; }
+          @media screen and (min-width: 48.0625rem) {
+            header .inner-wrapper #menu ul li {
+              margin-left: 20px; }
+              header .inner-wrapper #menu ul li.nav-home {
+                display: none; }
+              header .inner-wrapper #menu ul li a {
+                padding-left: 7px;
+                margin-left: -7px; } }
+          header .inner-wrapper #menu ul li a {
+            font-family: "brandon_grotesquemedium"; }
+    @media screen and (max-width: 89.9375rem) {
+      header .inner-wrapper .glic-logo svg {
+        margin-left: 0; }
+      header .inner-wrapper .ar-title {
+        width: auto; } }
+    @media screen and (max-width: 65.5rem) {
+      header .inner-wrapper {
+        width: 90.4%;
+        padding-top: 11px;
+        padding-bottom: 12px;
+        padding-left: 0;
+        padding-right: 0; } }
+    @media screen and (max-width: 48rem) {
+      header .inner-wrapper .ar-title {
+        display: none; } }
+    @media screen and (min-width: 87.5625rem) {
+      header .inner-wrapper #menu {
+        display: inline-block !important;
+        margin-top: 10px; }
+        header .inner-wrapper #menu #menu ul {
+          display: inline-block !important; }
+        header .inner-wrapper #menu #toggle, header .inner-wrapper #menu .navbar-btn {
+          display: none; } }
+    @media screen and (max-width: 87.5rem) {
+      header .inner-wrapper #menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 65px; }
+        header .inner-wrapper #menu.is-visible {
+          height: 100%; }
+        header .inner-wrapper #menu #toggle, header .inner-wrapper #menu .navbar-btn {
+          z-index: 99;
+          margin-right: 34px;
+          margin-top: 25px; }
+        header .inner-wrapper #menu ul {
+          display: none; } }
+    @media screen and (max-width: 37.5rem) {
+      header .inner-wrapper #menu ul {
+        padding-top: 50px; }
+        header .inner-wrapper #menu ul li a {
+          font-size: 1.16625rem; }
+        header .inner-wrapper #menu ul li .nav-ready a {
+          font-size: 3.75rem; } }
+
+.ham-open header .ar-title {
+  opacity: 0; }
+.ham-open .lity {
+  background-color: transparent; }
+  .ham-open .lity .lity-container {
+    padding-top: 65px;
+    transition: padding-top .4s ease-in-out;
+    margin-top: 0;
+    max-width: 100%;
+    width: 100%;
+    right: -2px; }
+    .ham-open .lity .lity-container .lity-close {
+      border-left: 4px solid transparent;
+      padding-left: 7px;
+      margin-left: -11px;
+      background-repeat: no-repeat;
+      background-position: center right;
+      box-sizing: content-box;
+      transition: border-color .4s ease-in-out; }
+      .ham-open .lity .lity-container .lity-close:focus {
+        outline: 0;
+        border-color: #7BCFFF; }
+
+.nav-up .lity-container {
+  padding-top: 0; }
+
+#hamburger-menu {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 44, 95, 0.96);
+  position: relative; }
+  #hamburger-menu ul {
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -35%); }
+    #hamburger-menu ul li {
+      margin: 1rem 0;
+      display: block; }
+      #hamburger-menu ul li a {
+        font-family: "brandon_grotesquebold";
+        text-decoration: none;
+        font-size: 1.375rem;
+        text-transform: capitalize;
+        color: white;
+        padding: .5rem 0;
+        display: inline-block;
+        border-left: 4px solid transparent;
+        padding-left: 7px;
+        margin-left: -11px;
+        transition: border-color .1s ease-in-out; }
+        #hamburger-menu ul li a:focus {
+          border-color: #7BCFFF;
+          outline: 0; }
+        #hamburger-menu ul li a:hover {
+          text-decoration: underline; }
+      #hamburger-menu ul li.nav-ready {
+        font-family: "brandon_grotesqueblack";
+        font-size: 5.625rem;
+        color: #328ABD;
+        margin: 0 auto;
+        display: block !important; }
+        @media screen and (max-width: 48rem) {
+          #hamburger-menu ul li.nav-ready {
+            font-size: 3.75rem; } }
+
+@media screen and (min-width: 87.5625rem) {
+  #hamburger-menu {
+    display: none !important; } }

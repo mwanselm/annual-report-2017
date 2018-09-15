@@ -1,0 +1,184 @@
+/* Colors */
+#overlay {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 17;
+  opacity: 0.5; }
+
+.footer-carousel {
+  position: fixed;
+  transition: bottom .4s ease-in-out;
+  width: 100%;
+  z-index: 18;
+  height: 171px;
+  bottom: 0;
+  visibility: visible; }
+  .footer-carousel .slider {
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+    display: none; }
+    .footer-carousel .slider.slick-initialized {
+      opacity: 1;
+      display: block; }
+  .footer-carousel.ftr-car-hide {
+    bottom: -119px; }
+    .footer-carousel.ftr-car-hide .plus-minus:before {
+      transform: rotate(0deg) !important; }
+  .footer-carousel .plus-minus {
+    cursor: pointer; }
+    .footer-carousel .plus-minus:before {
+      transform: rotate(90deg) !important; }
+    .footer-carousel .plus-minus:after {
+      transform: rotate(180deg); }
+  .footer-carousel .btn-container {
+    width: 100%;
+    border-bottom: 10px solid #328ABD; }
+    .footer-carousel .btn-container .btn-footer-carousel {
+      border-radius: 1rem 1rem 0px 0px;
+      background-color: #328ABD;
+      padding: 0.6875rem 0.790625rem 0.315625rem 0.904375rem;
+      color: white;
+      font-size: 1.16625rem;
+      font-family: "brandon_grotesqueblack";
+      float: right;
+      margin-right: 35px;
+      text-decoration: none;
+      text-transform: uppercase; }
+      .footer-carousel .btn-container .btn-footer-carousel .plus-minus {
+        position: relative;
+        width: 13px;
+        height: 13px;
+        float: right;
+        margin-top: 6px;
+        margin-left: 13px;
+        /* Vertical line */
+        /* horizontal line */ }
+        .footer-carousel .btn-container .btn-footer-carousel .plus-minus:before, .footer-carousel .btn-container .btn-footer-carousel .plus-minus:after {
+          content: "";
+          position: absolute;
+          background-color: white;
+          transition: transform 0.25s ease-out; }
+        .footer-carousel .btn-container .btn-footer-carousel .plus-minus:before {
+          top: 0;
+          left: 50%;
+          width: 2.5px;
+          height: 100%;
+          margin-left: -1.6px;
+          transform: rotate(0deg); }
+        .footer-carousel .btn-container .btn-footer-carousel .plus-minus:after {
+          top: 50%;
+          left: 0;
+          width: 100%;
+          height: 2.5px;
+          margin-top: -1.5px;
+          transform: rotate(0deg); }
+      .footer-carousel .btn-container .btn-footer-carousel .btn-text {
+        border-left: 4px solid transparent;
+        transition: all .2s ease-in-out;
+        padding-left: 7px; }
+      .footer-carousel .btn-container .btn-footer-carousel:focus {
+        outline: 0; }
+        .footer-carousel .btn-container .btn-footer-carousel:focus .btn-text {
+          border-color: #7BCFFF; }
+      .footer-carousel .btn-container .btn-footer-carousel:hover .btn-text {
+        text-decoration: underline; }
+  .footer-carousel .carousel {
+    width: 100%;
+    background: white;
+    height: 120px;
+    visibility: visible;
+    opacity: 1; }
+    .footer-carousel .carousel.sr-hide {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear;
+      transition-delay: 1s; }
+    .footer-carousel .carousel button {
+      position: absolute;
+      right: 0;
+      text-indent: -9999px;
+      width: 44px;
+      height: 65px;
+      background-color: rgba(232, 233, 240, 0.95);
+      border: 0;
+      outline: 0;
+      z-index: 1;
+      background-position: center;
+      background-size: 10px 18px;
+      background-repeat: no-repeat;
+      transition: background-color .2s ease-in-out; }
+      .footer-carousel .carousel button.slick-prev {
+        bottom: 0;
+        background-image: url(../img/chevron-left.svg); }
+      .footer-carousel .carousel button.slick-next {
+        top: 0;
+        background-image: url(../img/chevron-right.svg); }
+      .footer-carousel .carousel button:focus {
+        background-color: rgba(50, 138, 189, 0.9); }
+        .footer-carousel .carousel button:focus.slick-prev {
+          background-image: url(../img/chevron-left-w.svg); }
+        .footer-carousel .carousel button:focus.slick-next {
+          background-image: url(../img/chevron-right-w.svg); }
+  .footer-carousel .slick-slide {
+    margin: 18px 0;
+    border-right: 1px solid #A2AAC1;
+    width: 280px; }
+    .footer-carousel .slick-slide:focus {
+      outline: 0; }
+      .footer-carousel .slick-slide:focus a .copy {
+        border-color: #7BCFFF; }
+    .footer-carousel .slick-slide a:focus {
+      outline: 0; }
+      .footer-carousel .slick-slide a:focus .copy {
+        border-color: #7BCFFF; }
+    .footer-carousel .slick-slide:hover .snippet {
+      text-decoration: underline; }
+  .footer-carousel hr {
+    position: absolute;
+    right: 8px;
+    top: 95px;
+    width: 29px;
+    height: 1px;
+    background-color: #002550;
+    z-index: 2;
+    outline: 0;
+    border: 0; }
+    @media screen and (max-width: 30rem) {
+      .footer-carousel hr {
+        display: none; } }
+  .footer-carousel img, .footer-carousel .copy {
+    float: left; }
+  .footer-carousel img {
+    margin-right: 22px;
+    margin-left: 25px;
+    display: block;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 80px;
+    height: 80px; }
+  .footer-carousel .copy {
+    width: 160px;
+    border-left: 4px solid transparent;
+    padding-left: 7px;
+    margin-left: -11px;
+    transition: border-color .2s ease-in-out; }
+    .footer-carousel .copy p {
+      margin-top: 0;
+      line-height: 1;
+      color: #002550; }
+    .footer-carousel .copy .ready-text {
+      font-size: 1.16625rem;
+      font-family: "brandon_grotesqueblack";
+      margin-bottom: 4px;
+      color: #002550; }
+      .footer-carousel .copy .ready-text span {
+        display: block;
+        color: #6F91A9; }
+    .footer-carousel .copy .snippet {
+      font-size: 0.9375rem;
+      margin-bottom: 0; }
